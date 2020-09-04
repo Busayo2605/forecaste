@@ -90,6 +90,13 @@ class UI {
         document.querySelector(".icon").innerHTML = `<img src="https://openweathermap.org/img/wn/${ic}@4x.png"/>`;
         document.querySelector(".desc").innerHTML = descvalue;
         document.querySelector(".country").innerHTML = country;
+      
+      
+        const item = document.getElementById("city");
+        item.style.transition = "ease-in-out";
+        item.style.transitionDuration = " 1.5s";
+        item.style.transform = "scale(1.5)";
+        item.style.opacity = -1;
 
       });
     }
