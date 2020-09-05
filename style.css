@@ -1,0 +1,145 @@
+.cont {
+  background: rgba(200, 200, 200, 0.3);
+  margin: 3rem;
+  border-radius: 20px;
+  box-shadow: 2px 2px 2px  #000;
+}
+
+body {
+  font-family: "Righteous", cursive;
+  font-weight: bolder;
+  height: 100vh;
+  color: #fff;
+  text-shadow: 5px 5px 5px #000;
+  overflow: hidden;
+  padding: 1rem;
+}
+.max-temp {
+  font-size: 3rem;
+  padding-bottom: 1rem;
+}
+.min-temp {
+  font-size: 1.8rem;
+  padding-top: 1rem;
+}
+.icon img{
+  /* filter: drop-shadow(20px 20px 20px black);  */
+  
+  margin-top: -3rem;
+}
+
+#city{
+  border: solid 1px #fff;
+  width: 50%;
+  margin: auto;
+  background: transparent;
+  box-shadow: 5px 5px 5px #000;
+  text-shadow: 5px 5px 5px #000;
+  color: #fff;
+  opacity: -2;
+}
+
+#city:focus{
+  opacity: -2;
+  border: solid 1px #fff;
+  width: 50%;
+  margin: auto;
+  background: transparent;
+  box-shadow: 5px 5px 5px #000; 
+  text-shadow: 5px 5px 5px #000;
+  color: #fff;
+  opacity: -3;
+}
+
+.desc{
+  margin-top: -4.6rem;
+  font-size: 2.5rem;
+}
+
+span{
+  font-size: 3rem;
+}
+.temp{
+  margin-top: -1.3rem;
+}
+
+.searchbtn:focus{
+  box-shadow: none;
+}
+.search:hover{
+  color: grey;
+  transition: all ease-in-out 2s;
+  text-shadow: 4px 4px 4px black;
+}
+.search{
+  text-shadow: 4px 4px 4px black;
+}
+
+.date{
+  font-size: 2.3rem;
+}
+.name{
+  margin-top: -2rem;
+}
+
+
+/* loader */
+
+.loader,
+.loader:before,
+.loader:after {
+  
+  border-radius: 50%;
+  width: 2.5em;
+  height: 2.5em;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation: load7 1.8s infinite ease-in-out;
+  animation: load7 1.8s infinite ease-in-out;
+}
+.loader {
+  color: #000000;
+  font-size: 10px;
+  margin: 80px auto;
+  position: relative;
+  text-indent: -9999em;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-animation-delay: -0.16s;
+  animation-delay: -0.16s;
+}
+.loader:before,
+.loader:after {
+  content: '';
+  position: absolute;
+  top: 0;
+}
+.loader:before {
+  left: -3.5em;
+  -webkit-animation-delay: -0.32s;
+  animation-delay: -0.32s;
+}
+.loader:after {
+  left: 3.5em;
+}
+@-webkit-keyframes load7 {
+  0%,
+  80%,
+  100% {
+    box-shadow: 0 2.5em 0 -1.3em;
+  }
+  40% {
+    box-shadow: 0 2.5em 0 0;
+  }
+}
+@keyframes load7 {
+  0%,
+  80%,
+  100% {
+    box-shadow: 0 2.5em 0 -1.3em;
+  }
+  40% {
+    box-shadow: 0 2.5em 0 0;
+  }
+}
